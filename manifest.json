@@ -1,0 +1,14 @@
+{
+  "name": "Hide Reddit Usernames",
+  "description": "This extension hide all usernames from Reddit",
+  "version": "0.0.0",
+  "manifest_version": 3,
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["https://*.reddit.com/*"],
+      "run_at": "document_end",
+      "js": ["script.js"]
+    }
+  ]
+}
