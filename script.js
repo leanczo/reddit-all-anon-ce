@@ -5,6 +5,7 @@ const observer = new MutationObserver(function (mutations) {
     let m = mutations[i];
     for (let j = 0; j < m.addedNodes.length; j++) {
       document.documentElement.translate = "no";
+      document.title = newUsername;
       Array.prototype.slice
         .call(document.querySelectorAll('[data-testid="post_author_link"]'))
         .filter(function (el) {
