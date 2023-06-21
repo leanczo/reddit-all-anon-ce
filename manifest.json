@@ -1,9 +1,8 @@
 {
   "name": "Reddit Usernames Anon",
   "description": "This extension hide all usernames from Reddit",
-  "version": "1.0",
+  "version": "1.1",
   "manifest_version": 3,
-  "permissions": ["scripting"],
   "content_scripts": [
     {
       "matches": ["https://*.reddit.com/*"],
